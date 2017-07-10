@@ -1,0 +1,150 @@
+// Main
+@main-color: #0082C9;
+@main-background-color: #0082C9;
+@main-background-image: none;
+@main-background-size: inherit;
+
+// Loading
+@loading-color: #0082C9;
+@loading-text-shadow: 0;
+
+// Login
+@login-color: #555;
+@login-background-color: #0082C9;
+@login-rgba-background-color: rgba(0, 0, 0, 0);
+@login-box-shadow: 0;
+@login-border: none;
+@login-border-radius: 7px;
+@login-gradient-start: none;
+@login-gradient-end: none;
+@powered-color: #ddd;
+@languages-color: #fff;
+
+@spinner-background: rgba(0, 0, 0, .3);
+@spinner-color: #fff;
+
+// Menu
+@dropdown-menu-color: #333;
+@dropdown-menu-background-color: #fff;
+@dropdown-menu-hover-background-color: @main-color;
+@dropdown-menu-hover-color: #fff;
+@dropdown-menu-disable-color: #bbb;
+@dropdown-menu-selected-background-color: #eee;
+
+// Folders
+@folders-color: #fff;
+@folders-disabled-color: darken(@folders-color, 20%);
+@folders-selected-color: #fff;
+@folders-selected-background-color: #2b333d;
+@folders-selected-rgba-background-color: rgba(0, 0, 0, 0.25);
+@folders-focused-color: #fff;
+@folders-focused-background-color: #2b333d;
+@folders-focused-rgba-background-color: rgba(0, 0, 0, 0.15);
+@folders-hover-color: #fff;
+@folders-hover-background-color: #2b333d;
+@folders-hover-rgba-background-color: rgba(0, 0, 0, 0.10);
+@folders-drop-color: #fff;
+@folders-drop-background-color: #2b333d;
+@folders-drop-rgba-background-color: rgba(0, 0, 0, 0.35);
+
+// Settings
+@settings-menu-color: #fff;
+@settings-menu-disabled-color: #aaa;
+@settings-menu-selected-color: #fff;
+@settings-menu-selected-background-color: #2b333d;
+@settings-menu-selected-rgba-background-color: rgba(0, 0, 0, 0.5);
+@settings-menu-hover-color: #fff;
+@settings-menu-hover-background-color: #2b333d;
+@settings-menu-hover-rgba-background-color: rgba(0, 0, 0, 0.5);
+
+// Message List
+@message-list-toolbar-background-color: #f8f8f8;
+@message-list-toolbar-rgba-background-color: rgba(248, 248, 248, 1);
+@message-list-toolbar-gradient-start: false;
+@message-list-toolbar-gradient-end: false;
+
+// Message
+@message-background-color: #fff;
+@message-rgba-background-color: rgba(255, 255, 255, 1);
+
+// >> CUSTOM
+
+// > LOGIN
+
+// Transparent background for the login form
+.b-login-content .loginFormWrapper .loginForm {
+  background: transparent !important;
+}
+
+// > MAILBOX (Main view with mails)
+
+.messageList .second-toolbar {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.messageList .b-footer {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background: #f8f8f8 !important;
+}
+
+.messageView .b-content {
+  border-radius: 0 !important;
+}
+
+// No round buttons (only applies to big buttons like 'Send')
+.btn {
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+}
+
+// A adjusted color for the horizontal ruler
+.b-folders .b-list-delimiter {
+  border-bottom: 1px solid #ccc;
+}
+
+// Transparent background behind the user name
+.accountPlace {
+  background-color: transparent !important;
+  text-shadow: none !important;
+}
+
+// > USER SETTINGS
+
+// User Panel Sidebar (hovered items)
+.b-content.thm-settings-menu .b-settings-menu .e-item.selectable:hover .e-link {
+  background-color: @folders-hover-rgba-background-color !important;
+}
+
+// User Panel Sidebar (selected item)
+.b-content.thm-settings-menu .b-settings-menu .e-item.selectable.selected .e-link {
+  background-color: @folders-selected-rgba-background-color !important;
+}
+
+// No roundness and yes there's a writing mistake within "b-settins"
+.b-settins-right .b-content {
+  border-radius: 0;
+}
+
+// > ADMIN SETTINGS
+
+// Admin Panel Sidebar (hovered items)
+.b-content.thm-settings-menu .b-admin-menu .e-item.selectable:hover .e-link {
+  background-color: @folders-hover-rgba-background-color !important;
+}
+
+// Admin Panel Sidebar (selected item)
+.b-content.thm-settings-menu .b-admin-menu .e-item.selectable.selected .e-link {
+  background-color: @folders-selected-rgba-background-color !important;
+}
+
+.b-admin-right .b-content {
+  border-radius: 0;
+}
+
+/*
+For more information take a look at the default Nextcloud Theme:
+https://github.com/nextcloud/server/blob/master/core/css/variables.scss
+*/
